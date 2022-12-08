@@ -33,8 +33,7 @@ public class Main {
         }
     }
 
-    public static int deliveryDistance() {
-        int deliveryDistance = 96;
+    public static int deliveryDistance(int deliveryDistance) {
         int term = (deliveryDistance / 40) + 1;
         return term;
     }
@@ -47,7 +46,8 @@ public class Main {
         setupOS();
 
         System.out.println("\nЗадание 3");
-        int i = deliveryDistance();
+        int deliveryDistance = 96;
+        int i = deliveryDistance(deliveryDistance);
         System.out.println("Потребуется дней: " + i);
     }
 }
